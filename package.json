@@ -1,0 +1,17 @@
+{
+  "name": "ssaaff",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "format": "npx prettier --write .",
+    "serve": "npx http-server .",
+    "dummy": "echo 123"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "2.6.2"
+  }
+}
