@@ -16,31 +16,36 @@
   font-style: normal;
 }
 
+body {
+  margin: 0;
+}
+
 .social {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: 6rem 0;
+  margin: 4rem 0;
 }
 
 .footer {
   display: flex;
   flex: 0 1 300px;
   justify-content: space-between;
-  font-family: PPNeueMontreal-Book;
+  font-family: PPNeueMontreal-Book, serif;
   font-size: small;
   margin: 1rem 0;
 }
 
 .footer div {
-  font-family: PPNeueMontreal-Bold;
+  font-family: PPNeueMontreal-Bold, serif;
   font-size: small;
   color: hsl(22, 100%, 55%);
 }
 
 header {
-  font-family: PPNeueMontreal-Medium;
-  font-size: 4.3vw;
+  margin-top: 2rem;
+  font-family: PPNeueMontreal-Medium, serif;
+  font-size: 5vw;
   max-width: 1200px;
 }
 
@@ -54,9 +59,18 @@ header {
   display: flex;
   flex: 0 1 100px;
   justify-content: center;
-  font-family: PPNeueMontreal-Medium;
+  font-family: PPNeueMontreal-Medium, serif;
   font-size: large;
   margin: 2rem 0 6rem 0;
+}
+
+.logo {
+  margin: auto;
+  text-align: center;
+}
+
+.logo img {
+  width: 60%;
 }
 
 .first {
@@ -67,7 +81,7 @@ header {
 }
 
 .header {
-  font-family: PPNeueMontreal-Medium;
+  font-family: PPNeueMontreal-Medium, serif;
   font-size: xx-large;
   margin: 5rem 0;
   display: flex;
@@ -78,7 +92,7 @@ header {
 .mission {
   display: flex;
   justify-content: flex-start;
-  font-family: PPNeueMontreal-Medium;
+  font-family: PPNeueMontreal-Medium, serif;
   font-size: x-large;
   max-width: 750px;
   align-self: center;
@@ -89,4 +103,100 @@ header {
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-width: 1200px;
+  align-self: center;
+}
+
+.cards > .card {
+  display: flex;
+  flex: 0 1 450px;
+  justify-content: space-between;
+  font-family: PPNeueMontreal-Book, serif;
+  font-size: small;
+  flex-direction: column;
+  margin: 1rem 0;
+  text-align: justify;
+  padding: 4px 16px;
+}
+
+.cards > .card > .img {
+  text-align: center;
+}
+
+.cards > .card > .img > img {
+  width: 12rem;
+}
+
+.cards > .card > .name {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.cards > .card > .body {
+  text-align: justify-all;
+  margin: 1rem 0;
+  font-size: large;
+}
+
+.section.news {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex-direction: row;
+  max-width: 1200px;
+}
+
+.articles > div.news {
+  padding: 4px 16px;
+}
+
+.articles {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-self: center;
+}
+
+div.updates {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-width: 1200px;
+  align-self: center;
+}
+
+/*.articles > .card > .img {*/
+/*  text-align: center;*/
+/*}*/
+
+/*.articles > .card > .img > img {*/
+/*  width: 12rem;*/
+/*}*/
+
+/*.articles > .card > .name {*/
+/*  text-align: center;*/
+/*  margin: 1rem 0;*/
+/*}*/
+
+/*.articles > .card > .body {*/
+/*  text-align: justify-all;*/
+/*  margin: 1rem 0;*/
+/*  font-size: large;*/
+/*}*/
+
+@media screen and (min-width: 1500px) {
+  header {
+    font-size: 4.8rem;
+  }
 }
