@@ -1,0 +1,92 @@
+@font-face {
+  font-family: PPNeueMontreal-Book;
+  src: url("PPNeueMontreal-Book.woff") format("woff");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: PPNeueMontreal-Medium;
+  src: url("PPNeueMontreal-Medium.woff") format("woff");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: PPNeueMontreal-Bold;
+  src: url("PPNeueMontreal-Bold.woff") format("woff");
+  font-style: normal;
+}
+
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 6rem 0;
+}
+
+.footer {
+  display: flex;
+  flex: 0 1 300px;
+  justify-content: space-between;
+  font-family: PPNeueMontreal-Book;
+  font-size: small;
+  margin: 1rem 0;
+}
+
+.footer div {
+  font-family: PPNeueMontreal-Bold;
+  font-size: small;
+  color: hsl(22, 100%, 55%);
+}
+
+header {
+  font-family: PPNeueMontreal-Medium;
+  font-size: 4.3vw;
+  max-width: 1200px;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu div {
+  display: flex;
+  flex: 0 1 100px;
+  justify-content: center;
+  font-family: PPNeueMontreal-Medium;
+  font-size: large;
+  margin: 2rem 0 6rem 0;
+}
+
+.first {
+  justify-content: space-between;
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+}
+
+.header {
+  font-family: PPNeueMontreal-Medium;
+  font-size: xx-large;
+  margin: 5rem 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.mission {
+  display: flex;
+  justify-content: flex-start;
+  font-family: PPNeueMontreal-Medium;
+  font-size: x-large;
+  max-width: 750px;
+  align-self: center;
+  line-height: 1.5em;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
