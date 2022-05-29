@@ -5,13 +5,15 @@
   "main": "index.js",
   "scripts": {
     "format": "npx prettier --write .",
-    "serve": "npx http-server .",
-    "dummy": "echo 123"
+    "serve": "npx http-server -c-1  .",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "http-server": "^14.1.0",
+    "husky": "^8.0.1",
     "prettier": "2.6.2"
   }
 }
