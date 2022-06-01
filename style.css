@@ -18,6 +18,8 @@
 
 body {
   margin: 0;
+  color: whitesmoke;
+  background: black;
 }
 
 .social {
@@ -82,21 +84,27 @@ header {
 
 .header {
   font-family: PPNeueMontreal-Medium, serif;
-  font-size: xx-large;
+  font-size: x-large;
   margin: 5rem 0;
   display: flex;
   justify-content: center;
   text-align: center;
 }
 
+.articles > .card > .name {
+  font-family: PPNeueMontreal-Medium, serif;
+  font-size: large;
+}
+
 .mission {
   display: flex;
   justify-content: flex-start;
   font-family: PPNeueMontreal-Medium, serif;
-  font-size: x-large;
+  font-size: large;
   max-width: 750px;
   align-self: center;
   line-height: 1.5em;
+  margin: 0 3rem;
 }
 
 .section {
@@ -122,7 +130,7 @@ header {
   flex-direction: column;
   margin: 1rem 0;
   text-align: justify;
-  padding: 4px 16px;
+  padding: 0 1rem;
 }
 
 .cards > .card > .img {
@@ -136,6 +144,7 @@ header {
 .cards > .card > .name {
   text-align: center;
   margin: 1rem 0;
+  font-size: large;
 }
 
 .cards > .card > .body {
@@ -151,10 +160,12 @@ header {
   justify-content: space-evenly;
   flex-direction: row;
   max-width: 1200px;
+  margin-bottom: 5rem;
 }
 
-.articles > div.news {
-  padding: 4px 16px;
+.articles > div.news h4,
+p {
+  margin: 0px;
 }
 
 .articles {
@@ -166,6 +177,15 @@ header {
   align-self: center;
 }
 
+.articles > .img > img {
+  width: 14rem;
+}
+
+.articles,
+.updates {
+  margin-bottom: 5rem;
+}
+
 div.updates {
   width: 400px;
   display: flex;
@@ -174,29 +194,36 @@ div.updates {
   justify-content: space-evenly;
   max-width: 1200px;
   align-self: center;
+  margin-top: 1rem;
 }
 
-/*.articles > .card > .img {*/
-/*  text-align: center;*/
-/*}*/
+div.updates h4,
+p {
+  margin: 0px;
+}
 
-/*.articles > .card > .img > img {*/
-/*  width: 12rem;*/
-/*}*/
+.news h4 {
+  font-family: PPNeueMontreal-Bold, serif;
+}
 
-/*.articles > .card > .name {*/
-/*  text-align: center;*/
-/*  margin: 1rem 0;*/
-/*}*/
-
-/*.articles > .card > .body {*/
-/*  text-align: justify-all;*/
-/*  margin: 1rem 0;*/
-/*  font-size: large;*/
-/*}*/
+.news p {
+  font-family: PPNeueMontreal-Medium, serif;
+}
 
 @media screen and (min-width: 1500px) {
   header {
     font-size: 4.8rem;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .mission {
+    font-size: medium;
+  }
+  .header {
+    font-size: large;
+  }
+  .cards > .card > .body {
+    font-size: medium;
   }
 }
