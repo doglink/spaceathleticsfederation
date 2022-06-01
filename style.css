@@ -157,11 +157,10 @@ header {
   display: flex;
   justify-content: flex-start;
   font-family: PPNeueMontreal-Medium, serif;
-  max-width: 300px;
   align-self: center;
   line-height: 1.5em;
   font-size: large;
-  
+
 }
 
 .section.news {
@@ -256,5 +255,6 @@ p {
     max-width: 300px;
     align-self: center;
     line-height: 1.5em;
+    font-size: medium;
   }
 }
