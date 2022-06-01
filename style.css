@@ -229,10 +229,12 @@ p {
 
   .articles {
     width: 300px;
+    font-size: small;
   }
 
   div.updates {
     width: 300px;
     margin-bottom: 1rem;
+    font-size: small;
   }
 }
