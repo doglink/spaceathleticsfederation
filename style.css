@@ -96,6 +96,16 @@ header {
   font-size: large;
 }
 
+.line {
+  width: 200px;
+  height: 235px;
+  border-bottom: 2px solid hsl(22, 100%, 55%);
+  position: absolute;
+  text-align: center;
+  display: flex;
+  align-self: center;
+}
+
 .mission {
   display: flex;
   justify-content: flex-start;
