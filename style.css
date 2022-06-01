@@ -212,8 +212,9 @@ p {
   margin: 0px;
 }
 
-.news h4 {
+.news h4, .updates h4 {
   font-family: PPNeueMontreal-Bold, serif;
+  color: hsl(22, 100%, 55%);
 }
 
 .news p {
