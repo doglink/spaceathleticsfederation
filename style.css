@@ -104,7 +104,7 @@ header {
   max-width: 750px;
   align-self: center;
   line-height: 1.5em;
-  margin: 0 3rem;
+  margin: 0 1rem;
 }
 
 .section {
@@ -225,5 +225,9 @@ p {
   }
   .cards > .card > .body {
     font-size: medium;
+  }
+
+  .articles {
+    width: 300px;
   }
 }
