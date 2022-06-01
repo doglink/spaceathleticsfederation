@@ -230,4 +230,9 @@ p {
   .articles {
     width: 300px;
   }
+
+  div.updates {
+    width: 300px;
+    margin-bottom: 1rem;
+  }
 }
