@@ -16,31 +16,38 @@
   font-style: normal;
 }
 
+body {
+  margin: 0;
+  color: whitesmoke;
+  background: black;
+}
+
 .social {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: 6rem 0;
+  margin: 4rem 0;
 }
 
 .footer {
   display: flex;
   flex: 0 1 300px;
   justify-content: space-between;
-  font-family: PPNeueMontreal-Book;
+  font-family: PPNeueMontreal-Book, serif;
   font-size: small;
   margin: 1rem 0;
 }
 
 .footer div {
-  font-family: PPNeueMontreal-Bold;
+  font-family: PPNeueMontreal-Bold, serif;
   font-size: small;
   color: hsl(22, 100%, 55%);
 }
 
 header {
-  font-family: PPNeueMontreal-Medium;
-  font-size: 4.3vw;
+  margin-top: 2rem;
+  font-family: PPNeueMontreal-Medium, serif;
+  font-size: 5vw;
   max-width: 1200px;
 }
 
@@ -54,9 +61,18 @@ header {
   display: flex;
   flex: 0 1 100px;
   justify-content: center;
-  font-family: PPNeueMontreal-Medium;
+  font-family: PPNeueMontreal-Medium, serif;
   font-size: large;
   margin: 2rem 0 6rem 0;
+}
+
+.logo {
+  margin: auto;
+  text-align: center;
+}
+
+.logo img {
+  width: 60%;
 }
 
 .first {
@@ -67,22 +83,28 @@ header {
 }
 
 .header {
-  font-family: PPNeueMontreal-Medium;
-  font-size: xx-large;
+  font-family: PPNeueMontreal-Medium, serif;
+  font-size: x-large;
   margin: 5rem 0;
   display: flex;
   justify-content: center;
   text-align: center;
 }
 
+.articles > .card > .name {
+  font-family: PPNeueMontreal-Medium, serif;
+  font-size: large;
+}
+
 .mission {
   display: flex;
   justify-content: flex-start;
-  font-family: PPNeueMontreal-Medium;
-  font-size: x-large;
+  font-family: PPNeueMontreal-Medium, serif;
+  font-size: large;
   max-width: 750px;
   align-self: center;
   line-height: 1.5em;
+  margin: 0 3rem;
 }
 
 .section {
@@ -90,3 +112,141 @@ header {
   justify-content: center;
   flex-direction: column;
 }
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-width: 1200px;
+  align-self: center;
+}
+
+.cards > .card {
+  display: flex;
+  flex: 0 1 450px;
+  justify-content: space-between;
+  font-family: PPNeueMontreal-Book, serif;
+  font-size: small;
+  flex-direction: column;
+  margin: 1rem 0;
+  text-align: justify;
+  padding: 0 1rem;
+}
+
+.cards > .card > .img {
+  text-align: center;
+}
+
+.cards > .card > .img > img {
+  width: 12rem;
+}
+
+.cards > .card > .name {
+  text-align: center;
+  margin: 1rem 0;
+  font-size: large;
+}
+
+.cards > .card > .body {
+  text-align: justify-all;
+  margin: 1rem 0;
+  font-size: large;
+}
+
+.section.news {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex-direction: row;
+  max-width: 1200px;
+  margin-bottom: 5rem;
+}
+
+.articles > div.news h4,
+p {
+  margin: 0px;
+}
+
+.articles {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-self: center;
+}
+
+.articles > .img > img {
+  width: 14rem;
+}
+
+.articles,
+.updates {
+  margin-bottom: 5rem;
+}
+
+div.updates {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-width: 1200px;
+  align-self: center;
+  margin-top: 1rem;
+}
+
+div.updates h4,
+p {
+  margin: 0px;
+}
+
+.news h4 {
+  font-family: PPNeueMontreal-Bold, serif;
+}
+
+.news p {
+  font-family: PPNeueMontreal-Medium, serif;
+}
+
+@media screen and (min-width: 1500px) {
+  header {
+    font-size: 4.8rem;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .mission {
+    font-size: medium;
+  }
+  .header {
+    font-size: large;
+  }
+  .cards > .card > .body {
+    font-size: medium;
+  }
+}
+
+/*.articles > .card > .img {*/
+/*  text-align: center;*/
+/*}*/
+
+/*.articles > .card > .img > img {*/
+/*  width: 12rem;*/
+/*}*/
+
+/*.articles > .card > .name {*/
+/*  text-align: center;*/
+/*  margin: 1rem 0;*/
+/*}*/
+
+/*.articles > .card > .body {*/
+/*  text-align: justify-all;*/
+/*  margin: 1rem 0;*/
+/*  font-size: large;*/
+/*}*/
+
+/* .articles > div.news {
+  padding: 1rem 4rem;
+} */
