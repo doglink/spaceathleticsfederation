@@ -153,6 +153,17 @@ header {
   font-size: large;
 }
 
+.goals {
+  display: flex;
+  justify-content: flex-start;
+  font-family: PPNeueMontreal-Medium, serif;
+  max-width: 300px;
+  align-self: center;
+  line-height: 1.5em;
+  font-size: large;
+  
+}
+
 .section.news {
   margin: auto;
   display: flex;
@@ -228,17 +239,22 @@ p {
   }
 
   .articles {
-    width: 300px;
+    max-width: 300px;
     font-size: small;
   }
 
   div.updates {
-    width: 300px;
+    max-width: 300px;
     margin-bottom: 1rem;
     font-size: small;
   }
 
   .goals {
-    width: 300px;
+    display: flex;
+    justify-content: flex-start;
+    font-family: PPNeueMontreal-Medium, serif;
+    max-width: 300px;
+    align-self: center;
+    line-height: 1.5em;
   }
 }
