@@ -237,4 +237,8 @@ p {
     margin-bottom: 1rem;
     font-size: small;
   }
+
+  .goals {
+    width: 300px;
+  }
 }
