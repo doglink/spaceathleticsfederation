@@ -234,7 +234,7 @@ p {
   font-family: PPNeueMontreal-Medium, serif;
 }
 
-.news a {
+body > div.section.news > div.articles > div.news > a {
   font-family: PPNeueMontreal-Medium, serif;
   color: whitesmoke;
 }
