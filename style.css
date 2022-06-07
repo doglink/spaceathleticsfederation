@@ -234,6 +234,11 @@ p {
   font-family: PPNeueMontreal-Medium, serif;
 }
 
+.news a {
+  font-family: PPNeueMontreal-Medium, serif;
+  color: whitesmoke;
+}
+
 @media screen and (min-width: 1500px) {
   header {
     font-size: 4.8rem;
