@@ -237,6 +237,7 @@ p {
 body > div.section.news > div.articles > div.news > a {
   font-family: PPNeueMontreal-Medium, serif;
   color: whitesmoke;
+  text-decoration: none;
 }
 
 @media screen and (min-width: 1500px) {
