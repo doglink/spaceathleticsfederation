@@ -201,7 +201,7 @@ p {
 }
 
 .articles > .img > img {
-  width: 14rem;
+  width: 24rem;
 }
 
 .articles,
@@ -232,6 +232,12 @@ p {
 
 .news p {
   font-family: PPNeueMontreal-Medium, serif;
+}
+
+body > div.section.news > div.articles > div.news > a {
+  font-family: PPNeueMontreal-Medium, serif;
+  color: whitesmoke;
+  text-decoration: none;
 }
 
 @media screen and (min-width: 1500px) {
@@ -271,4 +277,9 @@ p {
     line-height: 1.5em;
     font-size: medium;
   }
+  
+  .articles > .img > img {
+  width: 19rem;
+  }
+  
 }
