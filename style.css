@@ -74,6 +74,17 @@ header {
   margin: 2rem 0 6rem 0;
 }
 
+.menu a {
+  font-family: PPNeueMontreal-Medium, serif;
+  font-size: large;
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.menu a:hover {
+  color: hsl(22, 100%, 55%);
+}
+
 .logo {
   margin: auto;
   text-align: center;
