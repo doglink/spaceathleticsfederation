@@ -110,6 +110,40 @@ header {
   text-align: center;
 }
 
+.title h4 {
+  font-family: PPNeueMontreal-Medium, serif;
+  font-size: x-large;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: -4rem;
+  color: hsl(22, 100%, 55%);
+}
+
+.title a {
+  font-family: PPNeueMontreal-Medium, serif;
+  font-size: x-large;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  max-width: 933px;
+}
+
+.subtitle {
+  display: flex;
+  justify-content: center;
+}
+
+.subtitle a {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  font-family: "PPNeueMontreal-Medium";
+  color: whitesmoke;
+  margin-top: -1rem;
+}
+
 .articles > .card > .name {
   font-family: PPNeueMontreal-Medium, serif;
   font-size: large;
@@ -275,6 +309,11 @@ body > div.section.news > div.articles > div.news > a {
   .header {
     font-size: large;
   }
+
+  .title h4 {
+    font-size: large;
+  }
+
   .cards > .card > .body {
     font-size: medium;
   }
