@@ -20,9 +20,9 @@ body {
   margin: 0;
   color: whitesmoke;
   background: black;
-  background-image: url("background.png");
-  background-repeat: round;
-  background-size: contain;
+  background-image: url("background.jpg");
+  background-repeat: space;
+  background-size: cover;
 }
 
 .social {
