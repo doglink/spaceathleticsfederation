@@ -20,6 +20,9 @@ body {
   margin: 0;
   color: whitesmoke;
   background: black;
+  background-image: url("background.png");
+  background-repeat: round;
+  background-size: contain;
 }
 
 .social {
@@ -38,8 +41,9 @@ body {
   margin: 1rem 0;
 }
 
-.footer div {
+.footer div a {
   font-family: PPNeueMontreal-Bold, serif;
+  text-decoration: none;
   font-size: small;
   color: hsl(22, 100%, 55%);
 }
@@ -49,6 +53,10 @@ header {
   font-family: PPNeueMontreal-Medium, serif;
   font-size: 5vw;
   max-width: 1200px;
+}
+
+.header img {
+  max-width: 933px;
 }
 
 .menu {
@@ -72,7 +80,7 @@ header {
 }
 
 .logo img {
-  width: 60%;
+  width: 50%;
 }
 
 .first {
@@ -96,6 +104,16 @@ header {
   font-size: large;
 }
 
+.line {
+  width: 200px;
+  height: 235px;
+  border-bottom: 2px solid hsl(22, 100%, 55%);
+  position: absolute;
+  text-align: center;
+  display: flex;
+  align-self: center;
+}
+
 .mission {
   display: flex;
   justify-content: flex-start;
@@ -104,7 +122,7 @@ header {
   max-width: 750px;
   align-self: center;
   line-height: 1.5em;
-  margin: 0 3rem;
+  margin: 0 1rem;
 }
 
 .section {
@@ -153,6 +171,15 @@ header {
   font-size: large;
 }
 
+.goals {
+  display: flex;
+  justify-content: flex-start;
+  font-family: PPNeueMontreal-Medium, serif;
+  align-self: center;
+  line-height: 1.5em;
+  font-size: large;
+}
+
 .section.news {
   margin: auto;
   display: flex;
@@ -178,7 +205,7 @@ p {
 }
 
 .articles > .img > img {
-  width: 14rem;
+  width: 24rem;
 }
 
 .articles,
@@ -202,12 +229,26 @@ p {
   margin: 0px;
 }
 
-.news h4 {
+.news h4,
+.updates h4 {
   font-family: PPNeueMontreal-Bold, serif;
+  color: hsl(22, 100%, 55%);
+}
+
+.updates a {
+  font-family: PPNeueMontreal-Medium, serif;
+  color: whitesmoke;
+  text-decoration: none;
 }
 
 .news p {
   font-family: PPNeueMontreal-Medium, serif;
+}
+
+body > div.section.news > div.articles > div.news > a {
+  font-family: PPNeueMontreal-Medium, serif;
+  color: whitesmoke;
+  text-decoration: none;
 }
 
 @media screen and (min-width: 1500px) {
@@ -226,27 +267,33 @@ p {
   .cards > .card > .body {
     font-size: medium;
   }
+
+  .articles {
+    max-width: 300px;
+    font-size: small;
+  }
+
+  div.updates {
+    max-width: 300px;
+    margin-bottom: 1rem;
+    font-size: small;
+  }
+
+  .goals {
+    display: flex;
+    justify-content: flex-start;
+    font-family: PPNeueMontreal-Medium, serif;
+    max-width: 300px;
+    align-self: center;
+    line-height: 1.5em;
+    font-size: medium;
+  }
+
+  .articles > .img > img {
+    width: 19rem;
+  }
+
+  .header img {
+    width: 19rem;
+  }
 }
-
-/*.articles > .card > .img {*/
-/*  text-align: center;*/
-/*}*/
-
-/*.articles > .card > .img > img {*/
-/*  width: 12rem;*/
-/*}*/
-
-/*.articles > .card > .name {*/
-/*  text-align: center;*/
-/*  margin: 1rem 0;*/
-/*}*/
-
-/*.articles > .card > .body {*/
-/*  text-align: justify-all;*/
-/*  margin: 1rem 0;*/
-/*  font-size: large;*/
-/*}*/
-
-/* .articles > div.news {
-  padding: 1rem 4rem;
-} */
