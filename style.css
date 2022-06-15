@@ -20,6 +20,7 @@ body {
   margin: 0;
   color: whitesmoke;
   background: black;
+  background-image: url("bg.png");
   background-repeat: space;
   background-size: cover;
 }
@@ -334,8 +335,8 @@ body > div.section.news > div.articles > div.news > a {
     font-family: PPNeueMontreal-Medium, serif;
     max-width: 300px;
     align-self: center;
-    line-height: 1em;
-    font-size: x-small;
+    line-height: 1.5em;
+    font-size: medium;
   }
 
   .articles > .img > img {
