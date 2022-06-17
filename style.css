@@ -232,7 +232,6 @@ header {
   justify-content: space-evenly;
   flex-direction: row;
   max-width: 1200px;
-  margin-bottom: 5rem;
 }
 
 .articles > div.news h4,
@@ -253,10 +252,12 @@ p {
   width: 24rem;
 }
 
+/*
 .articles,
 .updates {
   margin-bottom: 5rem;
 }
+*/
 
 div.updates {
   width: 400px;
