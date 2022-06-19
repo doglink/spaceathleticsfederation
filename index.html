@@ -7,6 +7,7 @@
     <title>SPACE ATHLETICS FEDERATION™</title>
     <meta name="description" content="SPACE ATHLETICS FEDERATION™" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="animate.min.css" />
     <script src="script.js"></script>
   </head>
   <link rel="stylesheet" type="text/css" href="style.css" />
@@ -111,8 +112,8 @@
         </div>
       </div>
 
+      <div class="header" id="manifesto">MANIFESTO</div>
       <div class="section">
-        <div class="header" id="manifesto">MANIFESTO</div>
         <div class="mission">
           For over 50 years, ever since the first rocket powered a crew into
           orbit, space activities have been the preserve of government-sponsored
@@ -168,14 +169,16 @@
         <div class="header">We will strive for the stars together.</div>
       </div>
 
-      <div class="header" id="events">EVENTS</div>
+      <div class="section">
+        <div class="header" id="events">EVENTS</div>
 
-      <div class="header">
-        <img src="./imgs/saf_h.jpeg" alt="saf_h.jpeg" />
-      </div>
-      <div class="title"><h4>Dublin Track Club 4x1 mile</h4></div>
-      <div class="subtitle">
-        <a href="01.html"> Read full article → </a>
+        <div class="header">
+          <img src="./imgs/saf_h.jpeg" alt="saf_h.jpeg" />
+        </div>
+        <div class="title"><h4>Dublin Track Club 4x1 mile</h4></div>
+        <div class="subtitle">
+          <a href="01.html"> Read full article → </a>
+        </div>
       </div>
 
       <div class="header" id="news">NEWS</div>
@@ -395,10 +398,59 @@
           text.innerText = `${percent.toFixed(2)} %`;
           if (resources.size === count) {
             container.removeAttribute("style");
+            container.classList.add(
+              "animate__animated",
+              "animate__fadeIn",
+              "animate__slower"
+            );
             loader.style.display = "none";
           }
         }
       );
+    </script>
+    <script>
+      const navs = document.querySelectorAll("div.nav>.menu>div");
+      for (const nav of navs) {
+        nav.onclick = (event) => {
+          event.preventDefault();
+          const a = nav.querySelector("a");
+          const href = a.getAttribute("href");
+          const target = document.querySelector(href);
+          target.scrollIntoView({ behavior: "smooth", block: "start" });
+        };
+      }
+    </script>
+    <script>
+      function isInViewport(element) {
+        const section = element.getBoundingClientRect();
+        const windowHeight =
+          window.innerHeight || document.documentElement.clientHeight;
+        const windowScrolledTop =
+          (window.pageYOffset || document.scrollTop || 0) -
+          (document.clientTop || 0);
+
+        return section.top - windowScrolledTop < windowHeight;
+      }
+
+      const sections = document.querySelectorAll(".section");
+      for (const section of sections) {
+        section.style.visibility = "hidden";
+      }
+
+      function reveal() {
+        for (const section of sections) {
+          if (isInViewport(section)) {
+            section.style.visibility = "";
+            section.classList.add(
+              "animate__animated",
+              "animate__fadeIn",
+              "animate__slower"
+            );
+          }
+        }
+      }
+
+      window.addEventListener("scroll", reveal);
     </script>
   </body>
 </html>
