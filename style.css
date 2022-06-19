@@ -348,7 +348,7 @@ p {
   font-family: PPNeueMontreal-Medium, serif;
 }
 
-body > div.section.news > div.articles > div.news > a {
+body div.section.news > div.articles > div.news > a {
   font-family: PPNeueMontreal-Medium, serif;
   color: whitesmoke;
   text-decoration: none;
