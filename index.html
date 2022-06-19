@@ -384,10 +384,10 @@
     <script>
       const container = document.querySelector("#container");
       const loader = document.querySelector("#loader");
-      const text = loader.querySelector('.text');
-      const images = Array.from(document.querySelectorAll("#container img")).map(
-        (image) => image.src
-      );
+      const text = loader.querySelector(".text");
+      const images = Array.from(
+        document.querySelectorAll("#container img")
+      ).map((image) => image.src);
       Resources("./bg.png", "./mobile.png", ...images).onLoad(
         (resources, count) => {
           console.log(`Loaded ${count}/${resources.size}.`);
