@@ -380,7 +380,7 @@
             <a href="https://www.facebook.com/SpaceAthleticsFederation">META</a>
           </div>
         </div>
-        <div class="footer">Copyright © 2022 SPACE ATHLETICS FEDERATION™</div>
+        <div class="footer">Copyright © <span id="year-of-copyright">202X</span> SPACE ATHLETICS FEDERATION™</div>
       </div>
     </div>
 
@@ -451,6 +451,11 @@
       }
 
       window.addEventListener("scroll", reveal);
+    </script>
+    <script>
+      const year = document.querySelector('#year-of-copyright');
+      const date = new Date();
+      year.innerText = date.getFullYear();
     </script>
   </body>
 </html>
