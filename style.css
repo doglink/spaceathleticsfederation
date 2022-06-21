@@ -171,6 +171,7 @@ header {
   font-family: PPNeueMontreal-Medium, serif;
   font-size: x-large;
   margin: 5rem 0;
+  margin-bottom: 2rem;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -369,10 +370,28 @@ body div.section.news > div.articles > div.news > a {
   }
 }
 
+#vertical {
+  display: none;
+  padding-bottom: 3rem;
+}
+
+#horizontal img {
+  margin-top: -5rem;
+  margin-bottom: 3rem;
+}
+
 @media screen and (max-width: 560px) {
   body {
     background-image: url("mobile.png");
     background-repeat: round;
+  }
+
+  #horizontal {
+    display: none;
+  }
+
+  #vertical {
+    display: flex;
   }
 
   .mission {
@@ -416,6 +435,12 @@ body div.section.news > div.articles > div.news > a {
   }
 
   .header img {
-    width: 19rem;
+    width: calc(100%);
+    margin-top: -5rem;
+  }
+
+  #vertical img {
+    width: calc(100%);
+    margin-top: -5rem;
   }
 }
