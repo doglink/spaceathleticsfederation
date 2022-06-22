@@ -17,8 +17,7 @@
     <div class="logo">
       <img src="./imgs/saf_h.jpeg" alt="logo.png" />
       <div class="header">
-        Paul Robinson, Sean Tobin, Andrew Coscoran, Hiko Haso & Coach Feidhlim
-        Kelly
+        Paul Robinson, Sean Tobin, Andrew Coscoran, Hiko Haso & Coach Feidhlim Kelly
       </div>
       <img src="./imgs/saf_v.jpeg" alt="logo.png" />
       <div class="header">Andrew Coscoran</div>
@@ -65,9 +64,33 @@
     width: 80%;
   }
 
+  .header {
+    margin: 0;
+  }
+
   @media screen and (min-width: 1500px) {
     .menu a {
       font-size: 4.8rem;
     }
   }
+
+  @media screen and (max-width: 560px) {
+
+  .header {
+    font-size: large;
+    margin: 0.5rem;
+  }
+
+  .header img {
+    width: calc(100%);
+    margin-top: -5rem;
+  }
+
+  .logo img {
+    padding: 0rem;
+    margin-top: 2rem;
+    width: 100%;
+  }
+
+}
 </style>
