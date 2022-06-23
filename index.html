@@ -18,6 +18,7 @@
         <div class="bounce2"></div>
         <div class="bounce3"></div>
         <p class="text">0.00%</p>
+        <p class="text">SAF™</p>
       </div>
     </div>
     <div id="container" style="display: none">
@@ -218,6 +219,40 @@
         }
       );
     </script>
+
+<script>
+  function isInViewport(element) {
+    const logo = element.getBoundingClientRect();
+    const windowHeight =
+      window.innerHeight || document.documentElement.clientHeight;
+    const windowScrolledTop =
+      (window.pageYOffset || document.scrollTop || 0) -
+      (document.clientTop || 0);
+
+    return logo.top - windowScrolledTop < windowHeight;
+  }
+
+  const logos = document.querySelectorAll(".logo");
+  for (const logo of logos) {
+    logo.style.visibility = "hidden";
+  }
+
+  function reveal() {
+    for (const logo of logos) {
+      if (isInViewport(logo)) {
+        logo.style.visibility = "";
+        logo.classList.add(
+          "animate__animated",
+          "animate__zoomIn",
+          "animate__faster"
+        );
+      }
+    }
+  }
+
+  window.addEventListener("scroll", reveal);
+</script>
+
     <script>
       const navs = document.querySelectorAll("div.nav>.menu>div");
       for (const nav of navs) {
@@ -262,6 +297,9 @@
 
       window.addEventListener("scroll", reveal);
     </script>
+
+
+
     <script>
       const year = document.querySelector('#year-of-copyright');
       const date = new Date();
