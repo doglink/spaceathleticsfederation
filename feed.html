@@ -23,7 +23,7 @@
         <div class="news">
           <h4>Space, the final frontier of sustainable investment</h4>
           <a href="https://www.swissinfo.ch/eng/space--the-final-frontier-of-sustainable-investment-/46213876">
-            In a recently published book, former banker Raphael Röttgen argues space is the new frontier for investors — as long as they are passionate, have the right connections, and sufficiently deep pockets. 
+            In a recently published book, former banker Raphael Röttgen argues space is the new frontier for investors — as long as they are passionate, have the right connections, and sufficiently deep pockets.
           </a>
         </div>
       </div>
@@ -66,7 +66,7 @@
       </div>
     </div>
 
-    <div class="section news">
+    <div id="column" class="section news">
       <div class="articles">
         <!-- <div class="news">
           <h4>VC Lab interview</h4>
@@ -189,7 +189,10 @@
 
   .section.news {
     padding-top: 2rem;
-}
+  }
+
+  @media screen and (max-width: 560px) 
+  {#column {padding-top: 0rem;}}
 
   div.updates {
       margin-top: 0rem;
