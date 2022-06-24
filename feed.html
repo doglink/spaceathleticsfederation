@@ -9,22 +9,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
   <body>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/cash/8.0.0/cash.min.js'></script> 
+<script>
+  $(document).ready(function() {
+  $(".txt").css({ // fade in the text
+    opacity: 0.8
+  });
+  console.clear();
+  var starCount = Math.ceil(300 + Math.random() * 300);
+  console.log(starCount + " stars!");
+  // get viewport size
+  var portHeight = $(window).height();
+  var portWidth = $(window).width();
+  // generate stars (classes range from star1 to star[starCount])
+  for (var n = starCount; n > 0; n--) {
+    $("body").append("<span class='stars star" + n + "'></span>");
+    // constrain star colors to reds & blues
+    var hue = Math.ceil(Math.random() * 90);
+    if (hue > 60) {
+      hue = Math.ceil(180 + Math.random() * 45);
+    }
+    // set star properties
+    var starColor = "hsl(" + hue + ", 100%, 96%)"; // keep the colors subtle/washed out
+    var starOpacity = Math.random() + 0.5;
+    var xPosition = Math.ceil(Math.random() * portWidth);
+    var yPosition = Math.ceil(Math.random() * portHeight);
+    var starSize;
+    // make it so some (10%) of our stars are 'big' stars
+    if (n > starCount * 0.5) {
+      starSize = Math.ceil(Math.random() * 2);
+    } else {
+      starSize = Math.ceil(Math.random() * 4);
+    }
+    // apply CSS to the stars
+    $(".star" + n).css({
+      background: starColor,
+      "border-radius": "50%",
+      "box-shadow": "0 0 10px 1px " + starColor,
+      opacity: starOpacity,
+      position: "absolute",
+      left: xPosition,
+      top: yPosition,
+      height: starSize,
+      width: starSize
+    });
+  }
+  // parallax stars on mouse movement (slow, but pretty)
+  $(document).on("mousemove", function parallax(event) {
+    $(".stars").css({
+      transform:
+        "translate(-" + 
+        (100 * (event.pageX / (portWidth / 55))) + "%, -" +
+        (100 * (event.pageY / (portHeight / 25))) + "%)"
+    }); 
+  });
+});
+</script>
+
     <div class="menu">
       <header><a href="index.html">SPACE ATHLETICS FEDERATION™</a></header>
     </div>
+    
+    
 
     <div class="section news">
       <div class="articles">
-        <div class="img">
-          <img src="https://www.swissinfo.ch/resource/image/46171342/landscape_ratio3x2/880/587/849cdea6eb304c3df02e998a5480c2f1/CFBE3A0D22093AAA0DC0BA2F85AAD229/virgin.jpg" alt="With SpaceShipTwo, Virgin Galactic aims to send six tourists to 110km altitude and into suborbital flight very soon. The spacecraft crashed in 2014, killing one pilot and seriously injuring the other — a stark reminder that going into space is never routine. © Virgin Galactic 2020" />
-        </div>
+        <iframe
+    allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write"
+    frameborder="0"
+    height="175"
+    style="
+      width: 100%;
+      max-width: 660px;
+      overflow: hidden;
+      background: transparent;
+    "
+    sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
+    src="https://embed.podcasts.apple.com/us/podcast/11-demystifying-investing-in-spacetech-with-raphael/id1551879294?i=1000522583997"
+  ></iframe>
         <br />
         <div class="news">
+
+          <h4>TerraWatch Space with Raphael Roettgen</h4>
+      <a
+        href="https://anchor.fm/terrawatch-space/episodes/11---Demystifying-Investing-in-SpaceTech-with-Raphael-Roettgen-e118ql0"
+      >
+        Demystifying Earth observation and space technologies - for everyone
+        outside the 'space bubble'.<br /><br />
+      </a>
+
           <h4>Space, the final frontier of sustainable investment</h4>
           <a href="https://www.swissinfo.ch/eng/space--the-final-frontier-of-sustainable-investment-/46213876">
-            In a recently published book, former banker Raphael Röttgen argues space is the new frontier for investors — as long as they are passionate, have the right connections, and sufficiently deep pockets.
+            In a recently published book, former banker Raphael Röttgen argues space is the new frontier for investors — as long as they are passionate, have the right connections, and sufficiently deep pockets.<br /><br />
           </a>
+
+          
+          
         </div>
       </div>
 
@@ -178,10 +262,24 @@
       </div>
       <div class="footer">Copyright © 2022 SPACE ATHLETICS FEDERATION™</div>
     </div>
+
+
+
+
+
   </body>
 </html>
 
 <style>
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
   body {
     color: whitesmoke;
     background-image: url("background.png");
