@@ -383,7 +383,7 @@ body div.section.news > div.articles > div.news > a {
 
 @media screen and (max-width: 560px) {
   body {
-    background-image: url("mob.png");
+    background-image: url("mob.jpg");
     background-repeat: round;
   }
 
