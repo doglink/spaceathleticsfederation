@@ -1,0 +1,100 @@
+body {
+  height: 100vh;
+  font-family: Helvetica;
+  background-color: #4f4f4f;
+  background-image: url("video.webp");
+  background-size: cover;
+  margin: 0vw;
+}
+
+.vual {
+  display: flex;
+  position: fixed;
+  padding-left: 50%;
+  height: 100vh;
+  width: 50%;
+}
+
+.blok {
+  display: flex;
+  background-color: #c2b9b9;
+  width: 100vh;
+  z-index: 600;
+  opacity: 80%;
+}
+
+.kosmos {
+  display: flex;
+  height: 100vh;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.golova {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 3rem;
+  align-items: center;
+}
+
+.nogi {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 3rem;
+  align-items: end;
+  line-height: 2rem;
+  z-index: 300;
+}
+
+.pravo img {
+  height: 5rem;
+}
+
+.levo h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #ff8000;
+}
+
+h1 {
+  font-size: 4rem;
+  color: white;
+}
+
+h1:hover {
+  color: #ff8000;
+  cursor: pointer;
+}
+
+h6 {
+  font-weight: 200;
+  text-align: right;
+}
+
+.pravo {
+  display: flex;
+  flex-direction: row;
+  line-height: 1rem;
+}
+
+.seti,
+.kopi {
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  color: white;
+}
+
+.instik,
+.fejsik,
+.tvitik {
+  padding: 0.5rem;
+}
+
+@namespace svg url(http://www.w3.org/2000/svg);
+
+<script>
+const year = document.querySelector('#god');
+const date = new Date();
+year.innerText = date.getFullYear();
+</script>
